@@ -1,0 +1,12 @@
+%h1 Editing category
+- form_for(@category) do |f|
+  = f.error_messages
+  %p
+    = f.label :name
+    %br/
+    = f.text_field :name
+  %p
+    = f.submit 'Update'
+= link_to 'Show', @category
+|
+\#{link_to 'Back', categories_path}

@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :categories
 
-  # The priority is based upon order of creation: first created -> highest priority.
+  map.resources :products
 
   # Authentication and session management
   map.resource :account, :controller => "users"
