@@ -1,0 +1,30 @@
+.bolder {
+  font-weight: bolder; }
+
+.bold {
+  font-weight: bold; }
+
+.clear_both {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+#header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ababab; }
+  #header .site_title {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 20px; }
+
+#footer {
+  border-top: 1px solid #ababab; }
+
+#main-content {
+  margin-top: 20px;
+  min-height: 500px;
+  clear: both; }
