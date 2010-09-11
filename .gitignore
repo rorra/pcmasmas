@@ -1,0 +1,15 @@
+log/*.log
+tmp/**/*
+doc/api
+doc/app
+script/custom/log/*.log
+
+.DS_Store
+.project
+.idea
+
+config/database.yml
+
+script/custom/log/*
+
+*.backup
