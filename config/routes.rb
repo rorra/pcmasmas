@@ -1,5 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :categories
+
   # The priority is based upon order of creation: first created -> highest priority.
+
+  # Authentication and session management
+  map.resource :account, :controller => "users"
+  map.resource :user_session
 
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
