@@ -13,6 +13,9 @@
 .right {
   float: right; }
 
+.hidden {
+  display: none; }
+
 #header {
   padding-bottom: 10px;
   border-bottom: 1px solid #ababab; }

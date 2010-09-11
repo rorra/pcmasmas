@@ -1,0 +1,10 @@
+- if flash[:notice]
+  #success.success
+    = flash.delete(:notice)
+- else
+  #success.success.hidden
+- if flash[:error]
+  #error.error
+    = flash.delete(:error)
+- else
+  #error.error.hidden

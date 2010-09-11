@@ -1,6 +1,9 @@
 .span-24
   .span-6.first
-    = link_to image_tag('site_logo.gif', :class => 'clear_both'), root_path
+    - if params[:controller].to_s.include? 'admin'
+      = link_to image_tag('site_logo.gif', :class => 'clear_both'), admin_home_path
+    - else
+      = link_to image_tag('site_logo.gif', :class => 'clear_both'), root_path
   .span-2
     &nbsp;
   .span-13
