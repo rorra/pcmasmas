@@ -1,12 +1,10 @@
-%h1 Listing categories
-%table
-  %tr
-    %th Name
-  - @categories.each do |category|
-    %tr
-      %td= h category.name
-      %td= link_to 'Show', category
-      %td= link_to 'Edit', edit_category_path(category)
-      %td= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete
-%br/
-= link_to 'New category', new_category_path
+%h1 Categories
+- @categories.each do |category|
+  = link_to category.name, category_path(category)
+%br
+
+%h1 Products
+.products.clearfix
+  = render :partial => '/products/product_info', :collection => @products
+
+= will_paginate(@products)

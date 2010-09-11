@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :categories
+  map.resources :categories, :only => [:index, :show]
 
-  map.resources :products
+  map.resources :products, :only => [:show]
 
   # Authentication and session management
   map.resource :account, :controller => "users"

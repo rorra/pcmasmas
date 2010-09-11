@@ -31,3 +31,16 @@
   margin-top: 20px;
   min-height: 500px;
   clear: both; }
+
+.product_info {
+  width: 200px;
+  border: solid 1px red;
+  height: 200px;
+  float: left;
+  margin: 0 5px 5px 0;
+  overflow-y: hidden; }
+  .product_info .name {
+    font-size: 1.2em;
+    font-weight: bold; }
+  .product_info .description {
+    font-size: 0.9em; }
