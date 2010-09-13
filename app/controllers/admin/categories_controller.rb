@@ -5,6 +5,8 @@ class Admin::CategoriesController < ApplicationController
 
   active_scaffold :categories do |config|
     config.list.columns = [:name, :products]
+    config.create.columns = [:name, :products]
+    config.update.columns = [:name, :products, :slug]
   end
 
   private
